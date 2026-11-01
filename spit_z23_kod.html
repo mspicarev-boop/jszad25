@@ -1,0 +1,55 @@
+<html> 
+   <body> 
+     <textarea cols="95" rows="50">
+<html>
+<head>
+<title>
+obliczanie drabiny spitsarev
+</title><div style="color:blue;font-size:50px;">
+<script language="JavaScript">
+function dlugosc_spi(d_spi,x_spi)
+{
+d_liczba=parseFloat(d_spi)
+x_liczba=parseFloat(x_spi)
+l_spi=d_liczba*d_liczba+x_liczba*x_liczba
+document.formularz.wyprowadz_dlugosc_spi.value=Math.sqrt(l_spi).toFixed(2);
+alert("dlugosc="+Math.sqrt(l_spi).toFixed(2)+" cm");
+pokaz1.innerHTML="dlugosc="+Math.sqrt(l_spi).toFixed(2)+" cm"+"<br>";
+}
+function kot_spi(d_spi,x_spi)
+{
+d_liczba=parseFloat(d_spi)
+x_liczba=parseFloat(x_spi)
+kot_wynik = Math.atan(d_liczba / x_liczba) * (180 / Math.PI);
+document.formularz.wyprowadz_kot_spi.value=kot_wynik.toFixed(2);
+alert("kąt="+kot_wynik.toFixed(2));
+pokaz2.innerHTML="kąt="+kot_wynik.toFixed(2);
+}
+</script>
+</head>
+<body>
+obliczanie drabiny
+
+<form name="formularz" action="..." onsubmit="dlugosc_spi(this.a.value,this.b.value);
+kot_spi(this.a.value,this.b.value);return false">
+Podaj wysokość oparcia drabiny w metrach=
+<input size="6" name="a">
+Podaj odległość oparcia drabiny=
+<input size="6" name="b">
+<br> 
+<input TYPE="submit" Value="oblicz" >
+<br> 
+dluogosc=
+<input size="6" name="wyprowadz_dlugosc_spi">
+kąt=
+<input size="6" name="wyprowadz_kot_spi">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body></div>
+</html>
+      </textarea> 
+    </body> 
+</html> 

@@ -1,0 +1,47 @@
+<html> 
+   <body> 
+     <textarea cols="65" rows="43">
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Użycie funkcji Spitsarev</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:30px;">
+<script language="JavaScript">
+
+var a = parseFloat(prompt("a=",""));
+var b = parseFloat(prompt("b=",""));
+
+function suma_spi(a,b) {
+    return a+b;
+}
+function odejmowanie_spi(a,b) {
+    return a-b;
+}
+function mnozenie_spi(a,b) {
+    return a*b;
+}
+function od_kwadratu_spi(a,b) {
+    document.write(a + "^2 = " + a*a + "<br>");
+    document.write(b + "^2 = " + b*b + "<br>");
+}
+function reszta_z_dzielenia_spi(a,b) {
+    return a%b;
+}
+document.write("suma=" + suma_spi(a,b) + "<br>");
+document.write("odejmowanie=" + odejmowanie_spi(a,b) + "<br>");
+document.write("mnożenie=" + mnozenie_spi(a,b) + "<br>"); 
+od_kwadratu_spi(a,b);
+document.write("reszta z dzielenia a przez b=" + reszta_z_dzielenia_spi(a,b) + "<br>");
+
+</script>
+</div>
+</body>
+</html>
+
+      </textarea> 
+    </body> 
+</html> 

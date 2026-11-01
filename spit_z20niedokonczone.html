@@ -1,0 +1,42 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+
+var ax_spi=prompt ("ax=","");
+var ay_spi=prompt ("ay=","");
+var bx_spi=prompt ("bx=","");
+var by_spi=prompt ("by=","");
+var cx_spi=prompt ("cx=","");
+var cy_spi=prompt ("cy=","");
+
+  function AB_spi() 
+   { 
+ var ax_spi= parseFloat(document.getElementById('ax').value); 
+ var ay_spi= parseFloat(document.getElementById('ay').value); 
+ var b_spi= a_spi*a_spi; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_spi.toFixed(2)+" cm^2";  
+   } 
+  function BC_spi() 
+   { 
+ var a_spi= parseFloat(document.getElementById('dlugosc').value); 
+ var b_spi= 4*a_spi; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_spi.toFixed(2)+" cm";  
+   } 
+  function AC_spi() 
+   { 
+ var a_spi= parseFloat(document.getElementById('dlugosc').value); 
+ var b_spi= 4*a_spi; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_spi.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_spitsarev()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_spitsarev()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html>

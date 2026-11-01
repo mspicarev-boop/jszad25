@@ -1,0 +1,35 @@
+<html> 
+   <body> 
+     <textarea cols="95" rows="30">
+
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_spitsarev() 
+   { 
+ var a_spi= parseFloat(document.getElementById('dlugosc').value); 
+ var b_spi= a_spi*a_spi; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_spi.toFixed(2)+" cm^2";  
+   } 
+  function obwod_spitsarev() 
+   { 
+ var a_spi= parseFloat(document.getElementById('dlugosc').value); 
+ var b_spi= 4*a_spi; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_spi.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_spitsarev()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_spitsarev()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html>
+
+      </textarea> 
+    </body> 
+</html> 

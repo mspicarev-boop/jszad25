@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Odpowiedzi_Spitsarev - JavaScript</title>
+    <script type="text/javascript"> 
+                 function okno_zamknij_spitsarev()  
+                       { 
+                             window.close() 
+                       } 
+            </script> 
+</head>
+<body>
+
+    <p><strong>1) kiedy powstał JavaScript (podaj datę).</strong></p>
+    <p><strong>4 grudnia 1995 roku</strong> (prace nad językiem pod nazwą Mocha rozpoczęły się w maju 1995 r.).</p>
+
+    <p><strong>2) dlaczego jest to język skryptowy</strong></p>
+    <p>Ponieważ nie wymaga wcześniejszego procesu kompilacji do pliku wykonywalnego – kod jest interpretowany i wykonywany bezpośrednio przez silnik w środowisku uruchomieniowym (np. w przeglądarce).</p>
+
+    <p><strong>3) gdzie jest wykonywany JS (klient lub serwer)</strong></p>
+    <p>Zarówno po stronie <strong>klienta</strong> (w przeglądarce internetowej), jak i po stronie <strong>serwera</strong> (za pomocą środowisk takich jak Node.js).</p>
+
+    <p><strong>4) dlaczego jest JS to bezpieczne narzędzie</strong></p>
+
+    <p>Działa w tzw. piaskownicy (sandbox) przeglądarki, co ogranicza jego dostęp do lokalnego systemu plików użytkownika, pamięci operacyjnej oraz zasobów sprzętowych bez wyraźnej zgody.</p>
+
+    <p><strong>5) czy jest to język obiektowy , jeśli tak to dlaczego.</strong></p>
+
+    <p>Tak, jest to język obiektowy, ponieważ opiera się na obiektach i wykorzystuje dziedziczenie oparte na prototypach (prototype-based OOP), pozwalając na tworzenie, modyfikowanie i tworzenie relacji między obiektami.</p>
+
+    <p><strong>6) wymień zalety JS:</strong></p>
+    <p>Zaleta1: <strong>Wszechstronność i uniwersalność</strong> (działa po stronie klienta, serwera oraz w aplikacjach mobilnych).</p>
+    <p>Zaleta2: <strong>Duża wydajność w interfejsach użytkownika</strong> (dynamiczna modyfikacja DOM bez konieczności przeładowywania strony).</p>
+    <p>Zaleta3: <strong>Ogromny ekosystem i społeczność</strong> (bogata biblioteka pakietów npm oraz liczne frameworki).</p>
+
+    <p><strong>7) Framework to:</strong></p>
+    <p>Gotowa szkieletowa struktura do tworzenia aplikacji, dostarczająca biblioteki, narzucająca architekturę kodu oraz przyspieszająca proces programowania.</p>
+
+    <p><strong>8) Do aplikacji mobilnych można użyć Framework</strong></p>
+
+    <p><strong>React Native</strong> (lub Ionic, Flutter z JS/TS).</p>
+
+    <p><strong>9) Aplikacje responsywne to:</strong></p>
+    <p>Aplikacje internetowe, których układ i wygląd automatycznie dostosowują się do rozmiaru ekranu urządzenia, na którym są wyświetlane (np. smartfon, tablet, komputer).</p>
+
+    <p><strong>10) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</strong></p>
+    <code>&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt;</code>
+    <p>Wytłumaczenie: Ten fragment kodu tworzy w formularzu HTML przycisk o nazwie "przycisk" i etykiecie "Nowa Strona". Kliknięcie przycisku wywołuje zdarzenie <code>onclick</code>, które uruchamia funkcję JavaScript o nazwie <code>WinOpen(' ')</code> (najczęściej używaną do otwierania nowego okna lub karty w przeglądarce).</p>
+
+    <p><strong>11) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</strong></p>
+
+<code>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code>
+
+<p><strong>Wytłumaczenie działania linii kodu:</strong></p>
+<p>Ta linia kodu wykorzystuje metodę <code>window.open()</code> języka JavaScript do otwarcia nowego okna przeglądarki o określonych parametrach:</p>
+<ul>
+    <li><code>"obraz.html"</code> – ścieżka do pliku/strony, która zostanie załadowana w nowym oknie.</li>
+    <li><code>"okienko"</code> – wewnętrzna nazwa docelowa dla nowego okna (używana m.in. przez atrybut <code>target</code>).</li>
+    <li><code>"toolbar=no"</code> – ukrywa pasek narzędzi przeglądarki.</li>
+    <li><code>"directories=no"</code> – ukrywa pasek osobisty/zakładek.</li>
+    <li><code>"menubar=no"</code> – ukrywa górne menu przeglądarki (Plik, Edycja itp.).</li>
+    <li><code>"height=280,width=160"</code> – ustawia dokładne wymiary okna: wysokość 280 pikseli i szerokość 160 pikseli.</li>
+    <li><code>"top=200,left=200"</code> – określa pozycję okna na ekranie (200 pikseli od górnej i 200 pikseli od lewej krawędzi monitora).</li>
+</ul>
+    <p><strong>12) Opisz następującą instrukcję window.close()</strong></p>
+
+<p><strong>Wytłumaczenie:</strong></p>
+<p>Instrukcja <code>window.close()</code> służy do zamykania bieżącego okna lub karty przeglądarki. Ze względów bezpieczeństwa współczesne przeglądarki pozwalają tej metodzie zamknąć tylko te okna, które zostały wcześniej otwarte za pomocą kodu JavaScript (np. przy użyciu funkcji <code>window.open()</code>).</p>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_spitsarev()"/> 
+</body>
+</html>

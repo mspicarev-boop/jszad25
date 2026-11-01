@@ -1,0 +1,79 @@
+<html> 
+   <body> 
+     <textarea cols="83" rows="74">
+
+<html>
+<head>
+    <title>Obliczanie pola i obwodu prostokąta Spitsarev</title>
+<div style="color:blue;font-size:50px;">
+    <script>
+        function pole_spi(a_spi, b_spi) {
+            a_liczba = parseFloat(a_spi);
+            b_liczba = parseFloat(b_spi);
+
+            pole_wynik = a_liczba * b_liczba;
+
+            document.getElementsByName('wyprowadz_pole_spi')[0].value =
+                pole_wynik.toFixed(2);
+
+            alert("pole=" + pole_wynik.toFixed(2) + " cm^2");
+
+            pokaz1.innerHTML =
+                "pole=" + pole_wynik.toFixed(2) + " cm^2";
+        }
+
+        function obwod_spi(a_spi, b_spi) {
+            a_liczba = parseFloat(a_spi);
+            b_liczba = parseFloat(b_spi);
+
+            obwod_wynik = 2 * a_liczba + 2 * b_liczba;
+
+            document.getElementsByName('wyprowadz_obwod_spi')[0].value =
+                obwod_wynik.toFixed(2);
+
+            alert("obwod=" + obwod_wynik.toFixed(2) + " cm");
+
+            pokaz2.innerHTML =
+                "obwod=" + obwod_wynik.toFixed(2) + " cm";
+        }
+    </script>
+</head>
+
+<body>
+    Obliczanie pola i obwodu prostokąta
+    
+
+    <form name="formularz"
+          onsubmit="pole_spi(this.a.value,this.b.value);
+                    obwod_spi(this.a.value,this.b.value);
+                    return false;">
+
+        Podaj a=
+        <input size="6" name="a">
+
+        Podaj b=
+        <input size="6" name="b">
+
+        <br>
+
+        <input type="submit" value="oblicz">
+
+        <br>
+
+        pole=
+        <input size="6" name="wyprowadz_pole_spi">
+
+        obwod=
+        <input size="6" name="wyprowadz_obwod_spi">
+    </form>
+
+    <table>
+        <tr><td id="pokaz1"></td></tr>
+        <tr><td id="pokaz2"></td></tr>
+    </table>
+</body>
+</html>
+
+       </textarea> 
+    </body> </div>
+</html> 

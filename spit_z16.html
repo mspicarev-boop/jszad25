@@ -1,0 +1,21 @@
+<head>
+<title>proste obliczenia spitsarev</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<div style="color:red;font-size:50px;">
+<script>
+var liczba1 = prompt("A=", "");
+var A_spi = parseFloat(liczba1);
+
+var liczba2 = prompt("B=", "");
+var B_spi = parseFloat(liczba2);
+
+document.write("A=" + A_spi + " B=" + B_spi + "<br>");
+document.write("("+A_spi+" + "+B_spi+")^3="+" "+A_spi+"^"+B_spi+" + "+B_spi+"*(("+A_spi+")^"+A_spi+")*("+B_spi+") + "+B_spi+"*(("+B_spi+")^"+A_spi+") + "+B_spi+"^"+B_spi+" = ");
+document.write(A_spi ** 3 + " + " +(3 * A_spi ** 2 * B_spi) + " + " +(3 * A_spi * B_spi ** 2)+ " + " +B_spi ** 3 + " = ");
+document.write((A_spi + B_spi) ** 3);
+</script>
+</div>
+</body>

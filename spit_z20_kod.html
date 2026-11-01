@@ -1,0 +1,41 @@
+<html> 
+   <body> 
+     <textarea cols="80" rows="36">
+
+<html>
+<head>
+<title>Spitsarev z20
+</title>
+</head>
+<body>
+<script>
+var xa_spi=parseFloat(prompt("xa=",""));
+var ya_spi=parseFloat(prompt("ya=",""));
+var xb_spi=parseFloat(prompt("xb=",""));
+var yb_spi=parseFloat(prompt("yb=",""));
+var xc_spi=parseFloat(prompt("xc=",""));
+var yc_spi=parseFloat(prompt("yc=",""));
+
+function AB_spi()
+{
+return Math.sqrt(Math.pow(xb_spi - xa_spi,2)+Math.pow(yb_spi - ya_spi,2));
+}
+
+function BC_spi()
+{
+return Math.sqrt(Math.pow(xc_spi - xb_spi,2)+Math.pow(yc_spi - yb_spi,2));
+}
+
+function AC_spi()
+{
+return Math.sqrt(Math.pow(xc_spi - xa_spi,2)+Math.pow(yc_spi - ya_spi,2));
+}
+document.write("AB="+AB_spi().toFixed(2)+"<br>");
+document.write("BC="+BC_spi().toFixed(2)+"<br>");
+document.write("AC="+AC_spi().toFixed(2));
+</script></body>
+</html>
+
+       </textarea> 
+    </body> 
+</html> 

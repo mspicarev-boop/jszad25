@@ -1,0 +1,71 @@
+<html> 
+<head> 
+<title> Spitsarev 1P </title> 
+<script language="JavaScript"> 
+
+function WinOpen_graf1()  
+               { 
+window.open("grafika1.html","okienko_g1","toolbar=no,directories=no,menubar=no,height=250,width=180,top=340,left=300"); 
+               } 
+function WinOpen_graf2()  
+               { 
+window.open("grafika2.html","okienko_g2","toolbar=no,directories=no,menubar=no,height=250,width=180,top=230,left=500"); 
+               } 
+function WinOpen_graf3()  
+               { 
+window.open("grafika3.html","okienko_g3","toolbar=no,directories=no,menubar=no,height=250,width=180,top=120,left=700"); 
+               } 
+function WinOpen_graf4()  
+               { 
+window.open("grafika4.html","okienko_g4","toolbar=no,directories=no,menubar=no,height=250,width=180,top=10,left=900");
+               } 
+function okno_zamknij()  
+               { 
+window.close() 
+               } 
+               
+</script> 
+<style> 
+
+p{
+    text-align: center;
+}
+
+.przyciski{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.zamknijokno { 
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+</style>
+</head> 
+<body>
+<p>
+<script>
+document.write("<span style='font-size: 2cm;color: red;'>wykonał: Spitsarev Maksim moj numer w dzienniku to 19 czyli mam układ[(19) mod 4=3] układ 3<br></span>");
+</script>
+</p>
+<div class="przyciski">
+<form> 
+
+    <input type="button_z3" name="grafika1" value="grafika1-spitsarev" onclick="WinOpen_graf1(' ')"> 
+    <input type="button_z4" name="grafika2" value="grafika2-spitsarev" onclick="WinOpen_graf2(' ')"> 
+    <input type="button_z4" name="grafika3" value="grafika3-spitsarev" onclick="WinOpen_graf3(' ')"> 
+    <input type="button_z4" name="grafika4" value="grafika4-spitsarev" onclick="WinOpen_graf4(' ')">    
+        
+</form> 
+</div>
+<div class="zamknijokno">
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+
+</div>
+</body> 
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Odpowiedzi_Spitsarev - JavaScript</title>
+    <script type="text/javascript"> 
+                 function okno_zamknij_spitsarev()  
+                       { 
+                             window.close() 
+                       } 
+            </script> 
+</head>
+<body>
+
+<p><strong>1) Jakie są rodzaje okienek w JavaScript?</strong></p>
+<p>W JavaScript wyróżniamy trzy podstawowe rodzaje okienek: <strong>alert</strong> – wyświetla okienko dialogowe z informacją i przyciskiem OK, <strong>prompt</strong> – wyświetla okienko, w którym użytkownik może wpisać wartość, oraz <strong>confirm</strong> – służy do potwierdzenia wykonania określonej czynności.</p>
+
+<p><strong>2) Na czym polega konwersja liczb w JavaScript?</strong></p>
+<p>Wartość wczytana za pomocą <strong>prompt</strong> jest traktowana jako ciąg znaków, dlatego przed wykonywaniem obliczeń należy ją przekonwertować na wartość liczbową.</p>
+<p><strong>parseFloat(zmienna)</strong> – konwersja zmiennej do liczby zmiennoprzecinkowej.</p>
+<p><strong>parseInt(zmienna)</strong> – konwersja zmiennej do liczby całkowitej.</p>
+<p><strong>toString(zmienna)</strong> – konwersja zmiennej do ciągu znaków.</p>
+
+<p><strong>3) Jakie są trzy zasady nadawania nazw zmiennym w JavaScript?</strong></p>
+<p>1. Nazwa zmiennej musi zaczynać się od litery, znaku <strong>$</strong> lub <strong>_</strong>. Nie może zaczynać się od cyfry ani zawierać polskich znaków.</p>
+<p>2. Wielkość liter ma znaczenie, czyli <strong>Rekord</strong> i <strong>rekord</strong> są różnymi zmiennymi.</p>
+<p>3. Nie należy używać słów kluczowych JavaScript jako nazw zmiennych.</p>
+
+<p><strong>4) Jakie są typy zmiennych w JavaScript?</strong></p>
+<p><strong>Number</strong> – typ liczbowy, obejmuje liczby całkowite i zmiennoprzecinkowe.</p>
+<p><strong>String</strong> – typ tekstowy.</p>
+<p><strong>Boolean</strong> – typ logiczny.</p>
+<p><strong>Null</strong> – pusta wartość.</p>
+<p><strong>Undefined</strong> – typ niezidentyfikowany.</p>
+<p><strong>Object</strong> – obiekt.</p>
+
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_spitsarev()"/> 
+</body>
+</html>

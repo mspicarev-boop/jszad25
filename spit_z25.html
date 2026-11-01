@@ -1,0 +1,28 @@
+
+<html>
+<html>
+<head>
+<title>Spitsarev z25</title>
+</head>
+<body><div style="color:blue;font-size:50px;">
+<script>
+var liczba1 = prompt("N0=", "");
+var NO_spi = parseFloat(liczba1);
+
+var liczba2 = prompt("T_0_5=", "");
+var T_0_5_spi = parseFloat(liczba2);
+
+var liczba3 = prompt("t_spi=", "");
+var t_spi = parseFloat(liczba3);
+
+var lambda_spi = Math.LN2 / T_0_5_spi;
+var N_spi = NO_spi * Math.exp(-lambda_spi * t_spi);
+
+document.write("N0= " + NO_spi + " [sztuk]<br>");
+document.write("t= " + t_spi + " [lat]<br>");
+document.write("T1/2= " + T_0_5_spi + " [lat]<br>");
+document.write("lambda= " + lambda_spi.toFixed(2) + " [1/rok]<br>");
+document.write("N= " + N_spi.toFixed(2) + " [sztuk]<br>");
+</script></div>
+</body>
+</html>
